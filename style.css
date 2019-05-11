@@ -1,0 +1,16 @@
+* {
+padding: 0;
+margin: 0;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-style: initial;
+    color: blueviolet;
+    
+}
+
+h2 {
+    color: aqua;
+}
+
