@@ -8,19 +8,52 @@
 <body>
 <header>
     <h1>Personal information</h1>
-    Здесь будет форма регистрации
-    Сделать прозрачную (transparent картинку)
+    <!--Форма для регистрации-->
+    <form class="form_conteiner" action="index.html"  method="post">
+        <p>Login into my Personal Website</p>
+        <div class="form_input">
+            <label for="form_login">Enter login:</label>
+                <input type="text" id="form_login" name="login"/>
+        </div>
+        <div class="form_input">
+            <label for="form_email">Enter email:</label>
+                <input type="email" id="form_email" name="email"/>
+        </div>
+        <div class="form_input">
+                <label for="form_phone">Enter phone:</label>
+                    <input type="text" id="form_phone" name="phone"/>
+            </div>
+         <div class="form_input">
+             <label for="form_password">Enter password:</label>
+              <input type="text" name="password" id="form_password" placeholder="Enter your password"/>
+            </div>
+         <div class="form_input">
+             <label for="">Confirm password:</label>
+            <input type="text" id="form_password_repeat" name="password_repeat" placeholder="Repeat your password"/>
+            </div>
+            <div class="form_input">
+                <label for="form_about">About:</label>
+                   <textarea class="form_input_about" type="text" id="form_about" name="about" placeholder="Enter information about yourself"></textarea>
+                   </div>
+         <div>
+             <input class="personal_data" type="submit" value="Registration">
+        </div>
+        
+    </form>
 </header>
 
-    <nav>
-        <h2>NAVIGATION</h2>
-Выпадающий список
-Контакты
-    </nav>
+<!-- nav NAVIGATION -->
+<!--Выпадающий список
+Контакты--> 
+<nav>
+    <li><a>About me</a></li>
+    <li><a>Contact with me</a></li>
+    <li><a>Find me</a></li>
+</nav>
 
-    <div>
+    <div class="aside_main">
+         <!--DIV для ASIDE & MAIN-->
         <aside>
-        <h2>ASIDE</h2>
         <img src="/img/my_photo_juliia_rudenko.jpg" title="my foto"> 
         </aside>
         <main>
@@ -29,11 +62,12 @@
                         I have basic and general understanding of technologies used in IT: Front End, Node.js, Python, PHP, Java, Ruby, 2D/3D etc. 
                         Good organizational, communication and relationship building skills.
                         </p>
+        </br>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Asperiores voluptatibus sint maxime debitis voluptate illo, esse, s
             apiente ut doloremque voluptates mollitia fugit? 
             Voluptate suscipit recusandae illo reprehenderit unde aspernatur perspiciatis.</p>
-
+        </br>
             <ul>
                 <li><a href="https://github.com/ilasa" target="_blank">My profile at GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/yuliia-rudenko-456871127/" target="_blank">My profile at LinkedIn</a></li>
@@ -44,20 +78,28 @@
 
 
     <section>
-            <h2>SECTION</h2>
-Вставить аудиозапись с музыкой
-
-<div>Вставить видео</div>
+            <h2>Interests</h2>
+            <br>
+        <h3>Music</h2>
+            <br>
+<audio controls>
+        <source src="/audio/hozier-take-me-to-church.mp3" type="audio/ogg">
+        <source src="/audio/hozier-take-me-to-church.mp3" type="audio/omp3">
+        <source src="/audio/hozier-take-me-to-church.mp3" type="audio/wav">
+</audio>
+<br>
+<br>
+<h3>Earth</h2>
+    <br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HCDVN7DCzYE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     
 <footer>
-    <h2>FOOTER</h2>
-    &copy; Copyright 
-    <br/>
-    Personal website by Juliia Rudenko
+    <p>&copy; Copyright <br/>
+     <span>Personal website by Juliia Rudenko</span></p>
 </footer>
 
-<!--Сделать коммит и прописать все шаги.
+<!-- Сделать коммит и прописать все шаги.
 1. Создан репозиторий на GitHub
 2. Склонировать репозиторий с помощью DesktopGitHub (клонировать репозиторий)
 -> выбрать нужный репозиторий
